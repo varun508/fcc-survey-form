@@ -18,19 +18,60 @@ h1 {
 }
 
 .form-div {
-    border-radius: 15px;
-    padding: 16px;
+    border-radius: 8px;
+    padding: 10px;
     background: white;
     margin-left: 10%;
+    text-align: center;
     margin-right: 10%;
 }
 
-.labels{
+.labels {
+    width: 40%;
+    float: left;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.inputs {
+    width: 60%;
+    float: left;
     text-align: left;
 }
 
-.inputs{
-    width: 40%;
-    text-align: right;
+.form-row {
+    padding: 5%;
+}
 
+label {
+    margin-right: 10px;
+}
+
+.dropdown {
+    height: 35px;
+    margin: 5px;
+    padding: 5px;
+    width: 150px;
+}
+
+textarea {
+    margin: 5px;
+    padding: 5px;
+}
+
+.edit-text {
+    margin: 5px;
+    padding: 5px;
+    width: 150px;
+    height: 20px;
+    border: 1px solid pink;
+    border-radius: 3px;
+}
+
+button{
+    padding: 10px;
+    margin: 10px;
+    background: cornflowerblue;
+    color: white;
+    font-weight: lighter;
 }

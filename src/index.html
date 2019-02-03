@@ -19,33 +19,119 @@
 
             <div class="form-row">
                 <div class="labels">
-                    <label id="label-name" for="name">*Name:</label>
+                    <label id="name-label" for="name">* Name: </label>
                 </div>
                 <div class="inputs">
-                    <input autofocus class="edit-text" id="name" placeholder="Enter your name">
+                    <input autofocus class="edit-text" id="name" placeholder="Enter your name"
+                           required>
                 </div>
             </div>
 
 
             <div class="form-row">
                 <div class="labels">
-                    <label id="label-email" for="email">*Email:</label>
+                    <label id="email-label" for="email">* Email: </label>
                 </div>
                 <div class="inputs">
-                    <input autofocus class="edit-text" id="email" placeholder="Enter your email">
+                    <input autofocus class="edit-text" type="email" id="email" placeholder="Enter your email"
+                           required>
                 </div>
             </div>
 
 
             <div class="form-row">
                 <div class="labels">
-                    <label id="label-age" for="age">*Age:</label>
+                    <label id="number-label" for="age">* Age: </label>
                 </div>
                 <div class="inputs">
-                    <input autofocus class="edit-text" id="age" placeholder="Enter your age">
+                    <input autofocus class="edit-text" id="age" placeholder="Enter your age"
+                           required type="number" min="0" max="100">
                 </div>
             </div>
 
+            <div class="form-row">
+                <div class="labels">
+                    <label for="dropdown">* What's your current role? </label>
+                </div>
+                <div class="inputs">
+                    <select id="dropdown" class="dropdown">
+                        <option disabled value>Select an option</option>
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="labels">
+                    <label for="gender">* What's your gender? </label>
+                </div>
+                <div class="inputs">
+                    <ul id="gender">
+                        <li>
+                            <label>
+                                Male <input type="radio" name="radio-buttons" value="1"
+                                            class="gender">
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                Female <input type="radio" name="radio-buttons" value="2"
+                                              class="gender">
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                Other <input type="radio" name="radio-buttons" value="3"
+                                             class="gender">
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="labels">
+                    <label for="skills">* What are your skills? </label>
+                </div>
+                <div class="inputs">
+                    <ul id="skills">
+                        <li>
+                            <label>
+                                Android <input type="checkbox" name="checkbox-buttons" value="0"
+                                               class="skills">
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                Web <input type="checkbox" name="checkbox-buttons" value="1"
+                                           class="skills">
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                AI/ML <input type="checkbox" name="checkbox-buttons" value="2"
+                                             class="skills">
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="form-row">
+                <div class="labels">
+                    <label id="comment-label" for="comment">* Any tips or suggestions you would like to give? </label>
+                </div>
+                <div class="inputs">
+                    <textarea rows="4" cols="30" id="comment"> Say something about us...</textarea>
+                </div>
+            </div>
+
+
+            <button type="submit" id="submit">Submit</button>
         </form>
 
     </div>
