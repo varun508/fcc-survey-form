@@ -2,9 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
 </head>
 <body>
+
+<div class="main" id="main">
+
+    <h1 id="title">Survey Form</h1>
+
+    <div id="form-div" class="form-div">
+
+        <p id="description">Let us see what can we improve on</p>
+
+        <form id="survey-form" method="get" action="index.html">
+
+            <div class="form-row">
+                <div class="labels">
+                    <label id="label-name" for="name">*Name:</label>
+                </div>
+                <div class="inputs">
+                    <input autofocus class="edit-text" id="name" placeholder="Enter your name">
+                </div>
+            </div>
+
+
+            <div class="form-row">
+                <div class="labels">
+                    <label id="label-email" for="email">*Email:</label>
+                </div>
+                <div class="inputs">
+                    <input autofocus class="edit-text" id="email" placeholder="Enter your email">
+                </div>
+            </div>
+
+
+            <div class="form-row">
+                <div class="labels">
+                    <label id="label-age" for="age">*Age:</label>
+                </div>
+                <div class="inputs">
+                    <input autofocus class="edit-text" id="age" placeholder="Enter your age">
+                </div>
+            </div>
+
+        </form>
+
+    </div>
+</div>
 
 </body>
 </html>

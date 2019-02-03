@@ -1,0 +1,36 @@
+:root {
+    --min-width-form-div: 500px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+body {
+    min-width: var(--min-width-form-div, 700px);
+    background: blueviolet;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.form-div {
+    border-radius: 15px;
+    padding: 16px;
+    background: white;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.labels{
+    text-align: left;
+}
+
+.inputs{
+    width: 40%;
+    text-align: right;
+
+}
